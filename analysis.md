@@ -860,5 +860,3 @@ This is basically auto-save after each step.
 ****Why Useful:**** Provides an undo safety net and an ability to recover older content (which is also part of collaboration maybe -- version history). It aligns with typical doc editors. For AI specifically, if a user tries an AI re-write and doesn't like it, having the previous version is crucial. The AI or system will need to implement storage of versions (maybe a table for versions with timestamp).
 
 ****Extra setting examples:**** Some might keep all versions (but that can be storage heavy, though text isn't huge). They chose 5, likely balancing space and usefulness. Possibly they think if needed beyond 5, user can copy out or so. Another policy could be KEEP_EVERY_VERSION_WITH_LIMITS (like store all but maybe compress older ones or something). But 5 is fine. There's no interface detail here but presumably an interface to view/revert to a version might exist. The AI should ensure that when saving new states, it rotates versions beyond 5.
-
-==
