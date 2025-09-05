@@ -1,24 +1,21 @@
 > ****AUTHOR'S NOTE:****\
-> Hi. This file has been written over probably a cumulative 14-18 hours spanning several weeks of iteration, trial-and-error, and testing the AI's interpretation of instructions (which has been a painstaking process). You are free to use it, learn from it, simply use it as research, whatever you'd like. I have tried to redact as little information as possible to retain some IP stealthiness until I am ready to release, at which point I will open-source the repository for self-hosting. ****If the file below helps you out, or you simply learn something from it or get inspiration for your own system instructions file, all I ask is that you share it with someone else who might, too, if for nothing else than me feeling the ten more hours I've spent today trying to wrestle ChatGPT into writing the longform analysis linked below was worth something.** **I am neither selling nor advertising anything here, this is not lead generation, just a helping hand to others, you can freely share this without being accused of shilling something (I hope, at least, with Reddit you never know).\
->\
-> If you prefer, you can also find both of these files - the analysis and the .md file - side-by-side in this GitHub repository ready for download.
+> Hi. This file has been written over probably a cumulative 14-18 hours spanning several weeks of iteration, trial-and-error, and testing the AI's interpretation of instructions (which has been a painstaking process). You are free to use it, learn from it, simply use it as research, whatever you'd like. I have tried to redact as little information as possible to retain some IP stealthiness until I am ready to release, at which point I will open-source the repository for self-hosting. ****If the file below helps you out, or you simply learn something from it or get inspiration for your own system instructions file, all I ask is that you share it with someone else who might, too, if for nothing else than me feeling the ten more hours I've spent today trying to wrestle ChatGPT into writing the longform analysis linked below was worth something.**).\
 
-If you want to understand what a specific setting does, or you want to see and confirm for yourself exactly how AI interprets each individual setting, I have killed two birds with one massive stone and asked GPT-5 to provide a clear analysis of/readme for/guide to the file here.
-=======================================================================================================================================================================================================================================================================================
+## If you want to understand what a specific setting does, or you want to see and confirm for yourself exactly how AI interprets each individual setting, I have killed two birds with one massive stone and asked GPT-5 to provide a clear analysis of/readme for/guide to the file. You can view that in [Analysis.md](analysis.md).
 
-****[NOTE: This file is VERY long because it serves BOTH as an instruction file and as research for how the model interprets instructions. If you are simply looking to learn about a specific rule, use the search functionality via CTRL/CMD+F, or you will be here until tomorrow. If you want to learn more about how AI interprets, reasons, and makes decisions, I strongly encourage you to read the entire analysis, even if you have no intention of using the attached file. I promise you'll learn at least** *******something.*********]****
+****[NOTE: The analysis file is VERY long because it serves BOTH as an instruction file and as research for how the model interprets instructions. If you are simply looking to learn about a specific rule, use the search functionality via CTRL/CMD+F, or you will be here until tomorrow. If you want to learn more about how AI interprets, reasons, and makes decisions, I strongly encourage you to read the entire analysis, even if you have no intention of using the attached file. I promise you'll learn at least** *******something.*********]****
 
 I've had relatively good success reducing the degree to which I have to micro-manage copilot as if it's a not-particularly-intelligent teenager using the following system-instructions file. I probably have to do 30-40% less micro-managing now. Which is still bad, but it's a lot better.
 
 The file is written in YAML/JSON-esque key:value syntax with a few straightforward conditional operators and logic operators to maximize AI understanding and consistent interpretation of instructions.
 
-The full content is pasted in the code block below. ****Before you use it, I beg you to read the very short FAQ below, unless you have extensive experience with these files already.****
+The full content is pasted in [copilot-instructions.md](copilot-instructions.md). ****Before you use it, I beg you to read the very short FAQ below, unless you have extensive experience with these files already.****
 
 Notice that sections replaced with "[...]" in the file demonstrate places where I have removed something to protect IP or dev environments from my own projects specifically for this Reddit post. I will eventually open-source my entire project, but I'd like to at least get to release first without having to deal with snooping amateur hackers.
 
 You should not carry the "[...]" over to your file.
 
-FAQ:
+### FAQ:
 ====
 
 ****How do I use this file?****
