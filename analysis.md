@@ -1,10 +1,10 @@
 **Note that where you see <REDACTED_FOR_IP> those are my manual edits to the report, as this file is being used on a live workspace. I will eventually open-source the project I am working on, but I'd like to keep it stealthy a little longer.**
 
 ## Comprehensive Analysis of copilot-instructions.md (by ChatGPT5 with deep research via ChatGPT)
-====================================================================================
+---
 
 ### Top-Level Overview
-==================
+---
 
 **This document,** [*****Copilot-instructions.md*****](http://copilot-instructions.md/)**, serves as a detailed configuration and rule-set for an AI coding assistant (the "agent"). It outlines how the agent should behave, make decisions, and interact with both code and the user. Each section targets a specific aspect of the agent's operation, from general behavior and project context to security, workflow, and commands. Below, we break down the document extensively: each setting is explained with its meaning, why it's important, and how it might be extended or customized. Example possible values are given in backticks, and suggestions for additional related settings are provided. This analysis ensures a clear understanding of every instruction and how the agent interprets them.**
 
