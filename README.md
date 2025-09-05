@@ -3,7 +3,7 @@
 
 ## If you want to understand what a specific setting does, or you want to see and confirm for yourself exactly how AI interprets each individual setting, I have killed two birds with one massive stone and asked GPT-5 to provide a clear analysis of/readme for/guide to the file. You can view that in [Analysis.md](analysis.md).
 
-****[NOTE: The analysis file is VERY long because it serves BOTH as an instruction file and as research for how the model interprets instructions. If you are simply looking to learn about a specific rule, use the search functionality via CTRL/CMD+F, or you will be here until tomorrow. If you want to learn more about how AI interprets, reasons, and makes decisions, I strongly encourage you to read the entire analysis, even if you have no intention of using the attached file. I promise you'll learn at least** *******something.*********]****
+**[NOTE: The analysis file is VERY long because it serves BOTH as an instruction file and as research for how the model interprets instructions. If you are simply looking to learn about a specific rule, use the search functionality via CTRL/CMD+F, or you will be here until tomorrow. If you want to learn more about how AI interprets, reasons, and makes decisions, I strongly encourage you to read the entire analysis, even if you have no intention of using the attached file. I promise you'll learn at leas *something.*]**
 
 I've had relatively good success reducing the degree to which I have to micro-manage copilot as if it's a not-particularly-intelligent teenager using the following system-instructions file. I probably have to do 30-40% less micro-managing now. Which is still bad, but it's a lot better.
 
@@ -11,9 +11,9 @@ The file is written in YAML/JSON-esque key:value syntax with a few straightforwa
 
 The full content is pasted in [copilot-instructions.md](https://github.com/TomKonig/Copilot_Instruction_Template/blob/main/copilot_instructions.md). ****Before you use it, I beg you to read the very short FAQ below, unless you have extensive experience with these files already.****
 
-Notice that sections replaced with "[...]" in the file demonstrate places where I have removed something to protect IP or dev environments from my own projects specifically for this Reddit post. I will eventually open-source my entire project, but I'd like to at least get to release first without having to deal with snooping amateur hackers.
+Notice that sections replaced with "<REDACTED_FOR_IP" in the file demonstrate places where I have removed something to protect IP or dev environments from my own projects specifically for this Reddit post. I will eventually open-source my entire project, but I'd like to at least get to release first without having to deal with snooping amateur hackers.
 
-You should not carry the "[...]" over to your file.
+You should not carry the "<REDACTED_FOR_IP>" over to your file.
 
 ### FAQ:
 ====
