@@ -6,7 +6,7 @@
 ### Top-Level Overview
 ---
 
-**This document,** [***Copilot-instructions.md***](http://copilot-instructions.md/)**, serves as a detailed configuration and rule-set for an AI coding assistant (the "agent"). It outlines how the agent should behave, make decisions, and interact with both code and the user. Each section targets a specific aspect of the agent's operation, from general behavior and project context to security, workflow, and commands. Below, we break down the document extensively: each setting is explained with its meaning, why it's important, and how it might be extended or customized. Example possible values are given in backticks, and suggestions for additional related settings are provided. This analysis ensures a clear understanding of every instruction and how the agent interprets them.**
+**This document,** ***Copilot-instructions.md***, serves as a detailed configuration and rule-set for an AI coding assistant (the "agent"). It outlines how the agent should behave, make decisions, and interact with both code and the user. Each section targets a specific aspect of the agent's operation, from general behavior and project context to security, workflow, and commands. Below, we break down the document extensively: each setting is explained with its meaning, why it's important, and how it might be extended or customized. Example possible values are given in backticks, and suggestions for additional related settings are provided. This analysis ensures a clear understanding of every instruction and how the agent interprets them.**
 
 > **How to read this analysis:**\
 > Settings are formatted as SETTING_NAME | example_possible_values. This is followed by an interpretation of the setting and its usefulness. Finally, **Extra setting examples** suggest potential additional settings or values that similar configurations might include for further customization.
@@ -34,7 +34,7 @@
 
 **IS_SINGLE_SOURCE_OF_TRUTH** | TRUE, FALSE
 
-**Interpretation:**This boolean declares whether this file is the single authoritative source for the AI's configuration. 'TRUE' means yes -- if there's any conflict between these instructions and other info (like comments in code or another config), this file wins. It elevates [Copilot-instructions.md](http://copilot-instructions.md/) above all else in guiding the AI.
+**Interpretation:** This boolean declares whether this file is the single authoritative source for the AI's configuration. 'TRUE' means yes -- if there's any conflict between these instructions and other info (like comments in code or another config), this file wins. It elevates Copilot-instructions.md above all else in guiding the AI.
 
 **Why Useful:** It prevents ambiguity. By affirming this file as the sole truth, the AI knows to **defer to it whenever conflicts arise**. For example, if in-code comments suggest a different practice than what's here, the AI will follow this file. This ensures consistency in AI behavior. If set to FALSE, it would imply other sources (maybe code comments or environment configs) could also influence the AI, requiring it to reconcile multiple inputs. Here, TRUE simplifies decision-making: look here first.
 
@@ -50,7 +50,7 @@
 
 `DO | DEFER_TO_THIS_FILE && PROPOSE_CODE_CHANGE_AWAIT_APPROVAL (within IF_CODE_AGENT_CONFIG_CONFLICT)`
 
-**Interpretation:** This is the **default action**in the conflict scenario. "Defer to this file" means the AI should assume the instructions in [Copilot-instructions.md](http://copilot-instructions.md/) are correct and the code is wrong or outdated. Then, "propose code change await approval" indicates the AI should suggest a change to the code (to realign it with these instructions) and wait for the user's approval before actually making that change. In practice, the AI might say:**"The code does X, but our guidelines say Y. I recommend changing the code to do Y instead (here's how). Shall I proceed?"**
+**Interpretation:** This is the **default action**in the conflict scenario. "Defer to this file" means the AI should assume the instructions in Copilot-instructions.md are correct and the code is wrong or outdated. Then, "propose code change await approval" indicates the AI should suggest a change to the code (to realign it with these instructions) and wait for the user's approval before actually making that change. In practice, the AI might say:**"The code does X, but our guidelines say Y. I recommend changing the code to do Y instead (here's how). Shall I proceed?"**
 
 **Why Useful:** It ensures consistency with the defined standards (this file) while also involving the user in the loop. By proposing (rather than automatically applying) a code change, the AI practices caution. The user gets to review the suggested fix, preventing any hasty modifications in case the code's deviation was intentional or the config is outdated. This default keeps the system aligned with the single source of truth (the config) but **in a controlled, reviewable manner**.
 
