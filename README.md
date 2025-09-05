@@ -9,7 +9,7 @@ I've had relatively good success reducing the degree to which I have to micro-ma
 
 The file is written in YAML/JSON-esque key:value syntax with a few straightforward conditional operators and logic operators to maximize AI understanding and consistent interpretation of instructions.
 
-The full content is pasted in [copilot-instructions.md](copilot-instructions.md). ****Before you use it, I beg you to read the very short FAQ below, unless you have extensive experience with these files already.****
+The full content is pasted in [copilot-instructions.md](https://github.com/TomKonig/Copilot_Instruction_Template/blob/main/copilot_instructions.md). ****Before you use it, I beg you to read the very short FAQ below, unless you have extensive experience with these files already.****
 
 Notice that sections replaced with "[...]" in the file demonstrate places where I have removed something to protect IP or dev environments from my own projects specifically for this Reddit post. I will eventually open-source my entire project, but I'd like to at least get to release first without having to deal with snooping amateur hackers.
 
