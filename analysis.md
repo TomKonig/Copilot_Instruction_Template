@@ -6,7 +6,7 @@ Detailed Interpretation of Copilot System Instructions
 Overview
 --------
 
-This copilot-instructions.md file is a comprehensive system configuration for an AI coding assistant. It defines who the AI is (its roles), the global rules it must follow, details about the product being built, and strict policies for development practices. The file acts as the single source of truth for how the AI should behave, plan changes, write code, and document the project. Each section below (marked by brackets like `[**AGENT_CONFIG**]`, `[**PRODUCT**]`, etc.) addresses a different aspect of the AI's guidance, from high-level identity and purpose down to specific procedures for code writing, refactoring, auditing, and documenting.
+This copilot-instructions.md file is a comprehensive system configuration for an AI coding assistant. It defines who the AI is (its roles), the global rules it must follow, details about the product being built, and strict policies for development practices. The file acts as the single source of truth for how the AI should behave, plan changes, write code, and document the project. Each section below (marked by brackets like `[AGENT_CONFIG]`, `[PRODUCT]`, etc.) addresses a different aspect of the AI's guidance, from high-level identity and purpose down to specific procedures for code writing, refactoring, auditing, and documenting.
 
 Following is a line-by-line interpretation of each setting in the file. For each setting, we explain what it means for the AI agent, why it's useful, and provide examples of alternative values or configurations that one might use in a similar context.
 
